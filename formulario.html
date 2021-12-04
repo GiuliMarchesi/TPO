@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MediCan</title>
+    <script src="https://kit.fontawesome.com/461dc4e5a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="Imagenes/LogoPestaña/medican-web-emergencias-veterinarias-02.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank">
+    <script defer src= "index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" calss="logo" target="_self"><img src="Imagenes/LogoNav/logoNav.png" alt="MediCan"></a>
+            </a>
+            <button class="nav-toggle"> <i class="fas fa-bars"></i> </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link" target="_self">INICIO <i
+                            class="fas fa-home"></i></a> </li>
+                <li class="nav-menu-item"><a href="productos.html" class="nav-menu-link nav-link" target="_self">PRODUCTOS
+                        <i class="fas fa-shopping-cart"></i></a> </li>
+                <li class="nav-menu-item"><a href="#servicio" class="nav-menu-link nav-link" target="_self">SERVICIO <i
+                            class="fas fa-info"></i></a></li>
+                <li class="nav-menu-item"><a href="#ubicacion" class="nav-menu-link nav-link" target="_self">DONDE ESTAMOS
+                        <i class="fas fa-map-marker-alt"></i></a> </li>
+                <li class="nav-menu-item"><a href="formulario.html" class="nav-menu-link nav-link"
+                        target="_self">CONTACTO</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="seccion seccion-transparente"> <h1>CONTACTANOS</h1></section>
+<form action="">
+    <div>
+        <label for="Nombre">Nombre</label>
+        <input type="text" id = 'Nombre'>
+    </div>
+    <div>
+        <label for="Apellido">Apellido</label>
+        <input type="text" id = 'Apellido'>
+    </div>
+    <div>
+        <label for="Dni">Dni</label>
+        <input type="text" id = 'Dni'>
+    </div>
+    <div>
+        <label for="Telefono">Nro. Telefono</label>
+        <input type="text" id = 'Telefono'>
+    </div>
+    <div>
+        <label for="Correo">Email</label>
+        <input type="text" id = 'Correo'>
+    </div>
+    <input class = "boton" type="submit" onclick= 'return enviarFormulario()' value = 'Enviar'>
+</form>
+<div id="error"></div>
+    <script src="form.js"></script>
+</body>
+
+
+<footer>Codo a Codo 2021
+    <a href="https://github.com/programming-Regina/demo_css_parallax" title="Obtener código">
+        <i class="fab fa-github"></i>
+    </a> por Giuliano Marchesi.
+</footer>
+
+</html>
